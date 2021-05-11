@@ -1,7 +1,13 @@
 {
   "name": "workspace",
-  "workspaces": [
-    "api",
-    "web"
-  ]
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "web",
+      "api"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  }
 }
